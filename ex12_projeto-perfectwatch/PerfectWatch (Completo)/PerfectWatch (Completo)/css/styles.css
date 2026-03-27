@@ -1,1 +1,703 @@
-/* 2ª Digitação (Aqui) */
+/* Define uma fonte padrão para todos os elementos */
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+  background-color: #252525; /* Cor de fundo do corpo */
+  color: #FFF; /* Cor do texto */
+}
+
+/* Classes para diferentes cores de fundo */
+.primary-bg-color {
+  background-color: #252525;
+}
+
+.destaque {
+  background-color: #0D0D0D;
+}
+
+.secondary-bg-color {
+  background-color: #976DF2;
+}
+
+.light-bg-color {
+  background-color: #FCF5EB;
+}
+
+.dark-bg-color {
+  background-color: #0D0D0D;
+}
+
+/* Classes para diferentes cores de texto */
+.primary-color {
+  color: #976DF2;
+}
+
+.secondary-color {
+  color: #F2F2F2;
+}
+
+.light-color {
+  color: #FCF5EB;
+}
+
+/* --------------------------------------------------------- */
+
+/* Estilos para a barra de navegação (navbar) */
+
+/* Ajusta a direção e alinhamento dos itens da barra de navegação */
+#navbar .navbar-nav {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* Define margem à esquerda para os itens da barra de navegação */
+#navbar .navbar-nav li {
+  margin-left: 1em;
+}
+
+/* Define a cor do texto e links na barra de navegação */
+#navbar a,
+#navbar button {
+  color: #FFF;
+}
+
+/* Ajusta a posição dos itens da barra de navegação */
+#navbar li {
+  position: relative;
+}
+
+/* Define estilo para ícones na barra de navegação */
+#navbar i {
+  font-size: 20px;
+}
+
+/* Define estilo de cor quando o mouse passa sobre os ícones */
+#navbar i:hover {
+  color: #976DF2;
+}
+
+/* Define estilo para caixa com número (ex: quantidade de itens) */
+#navbar span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #F53636;
+  text-align: center;
+}
+
+/* Posiciona a caixa com número no item de sacola de compras */
+#bag-item span {
+  left: 20px;
+}
+
+/* Estilos para a marca/logo na barra de navegação */
+#navbar-brand {
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilo de hover para links 'sobre' */
+#sobre a:hover {
+  color: #D80D0D !important; /* Importante para sobrepor outros estilos */
+}
+
+/* Ajusta estilo quando a largura da tela é maior que 768px */
+@media(min-width: 768px) {
+  #navbar-brand {
+    text-align: left;
+  }
+}
+
+/* Ajusta espaçamento entre itens da barra de navegação */
+#navbar-items {
+  justify-content: space-between;
+}
+
+/* Ajusta espaçamento quando a largura da tela é maior que 768px */
+@media(min-width: 768px) {
+  #navbar-items {
+    display: flex;
+    min-width: 80%;
+  }
+}
+
+/* Estilos para formulários de busca e newsletter */
+#search-form,
+#news-form {
+  width: 100%;
+  margin: 2em 0;
+}
+
+/* Ajusta largura e margem quando a largura da tela é maior que 768px */
+@media(min-width: 768px) {
+  #search-form,
+  #news-form {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+/* Estilos para campos de input em formulários */
+#search-form input,
+#news-form input {
+  border: 2px solid #F2F2F2;
+  border-radius: 3px;
+  padding: 5px 15px;
+}
+
+/* Estilos para campos de input quando focados */
+#search-form input,
+#news-form input {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+
+/* Estilos para campos de input quando focados */
+#search-form input:focus,
+#news-form input:focus {
+  box-shadow: none;
+}
+
+/* Estilos para placeholders em campos de input */
+#search-form input::placeholder,
+#news-form input::placeholder {
+  color: #FFF;
+}
+
+/* --------------------------------------------------------- */
+
+/* Estilos para a barra de navegação inferior (bottom-navbar) */
+
+/* Ajusta a posição dos itens na barra de navegação inferior */
+#bottom-navbar-container .container {
+  justify-content: flex-end;
+}
+
+/* Define cor do texto e links na barra de navegação inferior */
+#bottom-navbar-container a {
+  color: #FFF;
+  font-weight: 600;
+}
+
+/* Define tamanho do ícone do botão para mostrar/esconder o menu */
+#navbar-toggler {
+  font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* _________________________________________________________ */
+/* BEST SELLERS */
+
+/* Define altura e ajusta o redimensionamto das imagens nos cartões */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Define espaçamento interno para a seção */
+#best-sellers {
+  padding: 4em 0;
+}
+
+/* Remove margens horizontais para linha de produtos */
+#best-sallers .row {
+  margin: 0;
+}
+
+/* Ajusta o espaçamento interno das colunas dos produtos */
+#best-saller .col-md-3 {
+  padding: 0;
+}
+
+/* Estilos para o título da seção */
+.title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Media query para telas com largura minima de 768px */
+@media(min-width: 768px) {
+/* Ajusta o alinhamento do título para a esquerda */
+.title {
+  text-align: left;
+  }
+}
+
+/* Estilos para os preços */
+.original-price {
+  font-size: 18px;
+  color: #F2F2F2;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.discount-price {
+  font-size: 24px;
+  color: #976DF2; /* Cor destacada para o preço mais barato */
+}
+
+/* Estilos para os cartões de produtos */
+.card {
+  text-align: center;
+  border-radius: 0;
+}
+
+/* Ajusta o tamanho da imagem nos cartões */
+.card img {
+  width: 140px;
+  margin: 2em auto;
+}
+
+/* Estilos para a categoria do produto nos cartões */
+.card .card-text {
+  font-size: 8rem;
+}
+
+/* Estilos para o texto nos cartões */
+.card .card-text {
+  margin: 2em 0;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*___________________________________________________________ */
+/* (novidades) NEW PRODUCTS */
+
+/* Define margem inferior para a seção de Novidades */
+#new-prodcucts {
+    margin-bottom: 5rem;
+}
+
+/* Estilos para bo banner de Novidades */
+#new-products-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;
+}
+
+/* Estilos para o titulo do banner de Novidades */
+#new-products-banner h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Ajust o espaçamento interno das colunas produtos */
+#new-products .col-md-4 {
+    padding: 0;
+}
+
+/* Define tamanho e margens para as imagens nos cartões de produtos */
+#new-products .card img {
+    height: 150px;
+    width: 90px;
+    margin: 2em auto;
+}
+
+/*________________________________________________ */
+/* GALLERY */
+
+/* Estilos para os cointaners das imagens */
+#gallery .image-container {
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    cursor: pointer;
+    transition: .5s;
+    border: 3px solid #0D0D0D;
+}
+
+/* Estilos ao passar o mouse sobre as imagens */
+#gallery .image-container:hover {
+    border-color: #976DF2;
+}
+
+/* Define a imagem e fundo para cada container */
+#insta1 {
+    background-image: url('../img/insta1.jpg');
+}
+
+#insta2 {
+    background-image: url('../img/insta2.jpg');
+}
+
+#insta3 {
+    background-image: url('../img/insta3.jpg');
+}
+
+#insta4 {
+    background-image: url('../img/insta4.jpg');
+}
+
+#insta5 {
+    background-image: url('../img/insta5.jpg');
+}
+
+#insta6 {
+    background-image: url('../img/insta6.jpg');
+}
+
+/*__________________________________________________ */
+/* FOOTER */ 
+
+/* Estilos para a linha que sepera os links do radapé */
+#footer .footer-container {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+/* Estilos para as colunas no rodapé */
+#footer .footer-container {
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+/* Estilos para as colunas do radapé em telas maiores */
+@media(min-width: 795px) {
+    #footer .footer-column {
+    padding: 5em 2em;
+    }
+}
+
+/* Estilos para os títulos das colunas de links no radapé */
+#footer-links-container h3 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* Estilos para os títulos das colunas de links do radapé */
+#footer-links-conteiner li {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* Estilos ao passar o mouse sobre os links nos itens de lista do radapé */
+#footer-links-container li a:hover {
+    text-decoration: none;
+} 
+
+/* Estilos ao passar o mouse sobre os links nos itens  do radapé */
+#footer-links-container li a:hover {
+    color: #976DF2;
+}
+
+/* Estilos para a coluna central no rodapé */
+#footer-center {
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+}
+
+/* Estilos para o titulo da coluna cetral do rodapé */
+#footer-center h3 {
+    font-weight: 900;
+}
+
+/* Estilos para o número de telefone na coluna do rodapé */
+#footer-center .strore-phone {
+    color: #976DF2;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: -15px;
+}
+
+/* _________________________________________________ */ 
+/* NEWS */
+
+/* Estilos para o container da seção de newsxletter */
+#newsletter-container {
+    background-color: #0D0D0D;
+    border-bottom: 1px solid #F2F2F2;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estios para o formulário de inscrição no newsletter */
+#news-form {
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+/* Estilos para o ícone no formulario de inscrição */
+#news-form i {
+    font-size: 1.5;
+}
+
+/* Estilos para o botão no formulário de inscrição */
+#news-form .btn {
+    color: #FFF ;
+}
+
+/* Estilos para o container das redes sociais */
+#social-container i {
+    margin: 20px auto;
+}
+
+/* Estilos para os icones de redes sociais */
+#social-container i {
+    font-size: 1.5;
+    margin: 10px;
+    cursor: pointer;
+    color: #F2F2F2;
+    transition: .3s;
+} 
+
+/* Estilos ao passar o mouse sobre os ícones de redes sociais */
+#social-container i:hover {
+    color: #976DF2;
+}
+
+/* ____________________________________________ */
+/* COPY */
+
+/* Estilos para o container de direitos autorais */
+#copy-container {
+    text-align: center;
+    padding: 30px;
+}
